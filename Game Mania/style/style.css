@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins';
+}
+
+a:hover:not(#link-cadastro, #footer-contato > a){
+    transform: translateY(2px);
+    background-color: rgba(19,19,60,1);
+    border-radius: 20%;
+    color: white;
+}
+#link-cadastro:hover{
+    transform: translateY(2px);
+}
+
+/* TOP BAR */
+#navbar-top{
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-end;
+    gap: 15px;
+    background-color: black;
+    color: white;    
+}
+
+.max-width{
+    background-color: black;
+}
+
+#entrar-menu{
+    margin-right: 150px;
+}
+
+/* HEADER CENTRAL */
+#mid-header{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(15,18,70,1) 33%, rgba(0,0,0,1) 74%, rgba(6,4,27,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#logo{
+    margin-left: 150px;
+}
+.container a{
+    color: white;
+}
+
+.navbar-nav a:hover{
+    background-color: rgb(83, 80, 80);
+    border-radius: 20%;
+}
+.navbar-nav a:active{
+    background-color: white;
+    border-radius: 20%;
+    color: white;
+}
+.navbar-nav a:active{
+    background-color: white;
+    border-radius: 20%;
+    color: white;
+}
+
+#center-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul{
+    background-color: rgb(21, 24, 83);
+    border-radius: 15px;
+}
+
+#search-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+/*ver aqui margin-right na hora de responsividade */
+#search-input button{
+    height: 38px;
+    margin-right: 150px;
+
+}
+
+#link-cadastro{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 18px;
+    color: white;
+    margin-right: 150px;
+}
+
+.navbar-nav > li > .dropdown-menu { 
+    background-color: rgb(8, 8, 24); 
+}
+
+.container a:hover{
+    color: white;
+}
+
+main{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(15,18,70,1) 33%, rgba(0,0,0,1) 74%, rgba(6,4,27,1) 100%);
+}
+footer{
+    background-color: black;
+}
+
+/* cards */
+
+.comprar{
+    cursor: pointer;
+}
+
+.cardMascote{
+    background: linear-gradient(90deg, rgba(7,6,17,1) 19%, rgba(9,8,22,1) 100%);    
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 400px;   
+}
+
+.cardMascote{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;    
+}
+
+.imgcard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    height: 192px;
+}
+.card-body{
+    width: 192px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 0;   
+    background-color: rgb(214, 212, 212);    
+}
+
+.card-title{
+    margin: 10px auto;
+    max-height: 30px;
+    font-size: 15px;
+    color: black;
+}
+
+.card-text{
+    color: black;
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+.discount{
+    color: red;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.price{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.discountBox{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;     
+}
+
+.cardMascote > h5{
+    color: white;
+}
+
+.first-card{
+    position: relative;
+    top: -38px;
+}
+
+.last-card{
+    position: relative;
+    top: -38px;
+}
+
+.prev-btn{
+    position: relative;
+    top: 180px;
+    left: -60px;
+
+}
+
+.next-btn{
+    position: relative;
+    top: 180px;
+    left: 220px;  
+}
+
+/* SOBRE */
+.p-about{
+    color: white;
+    font-size: 18px;
+}
+
+#sobre{
+    text-align: center;
+    color: white;
+    font-size: 60px
+}
+
+.divisor{
+    background-color: white;
+    width: 100%;
+    height: 1px;
+}
+
+#section-about{
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 3px solid white;
+    margin-bottom: 40px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 42%, rgba(16,13,54,1) 65%);
+}
+#imagens-about{
+    margin-top: 100px;
+}
+/* FOOTER */
+
+#logo-footer{
+    margin: 20px 0 20px 65px;
+}
+
+.p-footer-about{
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.p-footer-about-last{
+    color: white;
+    font-size: 14px;
+    margin: 0 0 20px 30px;
+}
+
+#footer-institucional{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    gap: 10px;
+}
+
+#footer-contato{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    gap: 3px;
+}
+
+.rede-social:hover{
+    transform: translateY(2px);
+}
+
+.desenv{
+    color: white;
+    background-color: black;
+}
+@media only screen and (max-width: 1520px) {
+    #form1{
+        position: relative;
+        right: 170px;
+       
+    }
+    #search-input button{
+        position: relative;
+        bottom: 38px;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    #form1{
+        position: relative;
+        right: 100px;
+       
+    }
+
+    #search-input button{
+        position: relative;
+        bottom: 38px;
+        left: 70px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    /*header*/
+    #navbar-top{
+        font-size: 15px; 
+        gap: 40px;       
+    }
+
+    #entrar-menu{
+        margin-right: 50px;        
+    }
+
+    #img-logo-header{
+        width: 128px;
+        margin-top: 100px;
+        position: relative;
+        right: 50px;
+    }
+
+    #mascote-header{
+        width: 128px;
+    }
+
+    .navbar-nav{
+        font-size: 14px;        
+    }
+
+    .dropdown-item{
+        font-size: 14px;
+    }
+
+    #link-cadastro{
+        font-size: 15px;
+        margin-right: 45px;
+    }
+
+    #form1{
+        width: 200px;
+        height: 28px;
+        font-size: 14px;
+        margin-top: 190px;
+        position: relative;
+        right: 258px;
+        margin-bottom: 0;        
+    }
+    #search-input button{
+        height: 30px;
+        top: -29px;
+        left: -100px;
+    }   
+
+    #img2-about, #img3-about, #img5-about{
+        display: none;
+    }
+    #imagens-about{
+        display: flex;        
+        max-height: 70px;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 40px;
+    }
+    #mascote-about{
+        width: 300px;
+        position: relative;
+        right: 200px;
+        top: 300px;
+    }
+
+    .middle-card{
+        position: relative;
+        top: -40px;
+    }
+
+    .centralizar-md-sm{
+        display: flex;
+        justify-content: center;
+    }
+
+    .first-card{
+        margin-left: 70px;
+    }
+
+    .prev-btn{        
+        left: 12px;
+    }
+
+    .cardMascote{
+        background: linear-gradient(0deg, #0d0b24 52%, #100d36 100%);
+        margin-bottom: 20px;            
+    }
+
+    /*ABOUT*/
+    #sobre{
+        font-size: 30px;
+    }
+    #imagens-about{
+        margin-top: 100px;
+    }
+    /*FOOTER*/
+    #footer-section{
+        font-size: 10px;
+    }
+}   
+
+
+@media only screen and (max-width: 575px) {
+    #mascote-header{
+        display: none;
+    }
+    .nav-link{
+        padding: 4px;
+        margin-left: 8px;
+    }
+    .navbar-nav{
+        position: relative;
+        padding: 5px 5px;
+    } 
+    #link-cadastro{
+        font-size: 12px;
+        width: 100px;
+        margin-right: 120px;
+    }
+    #next-btn-hide-1-xs{
+        position: relative;
+        left: 290px;
+        top: 140px;
+    }
+    #next-btn-hide-2-xs{
+        position: relative;
+        left: 290px;
+        top: 140px;
+    }
+    .center-w-alone{
+        position: relative;
+        left: 58px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /*topbar*/
+    #navbar-top{
+        font-size: 12px; 
+        gap: 20px;       
+    }
+
+    #entrar-menu{
+        margin-right: 8px;
+    }
+
+    #img-logo-header{
+        width: 96px;
+        margin-top: 80px;
+        position: relative;
+        left: -40px;        
+    }
+
+    #mascote-header{
+        display: none;
+    }
+
+    #link-cadastro{
+        font-size: 13px;
+        margin-right: 65px;
+        margin-top: 20px;
+    }
+    .nav-link{
+        padding: 4px;
+        margin-left: 8px;
+    }
+    .navbar-nav{
+        position: relative;
+        left: 80px;
+        padding: 5px 5px;
+    }    
+}

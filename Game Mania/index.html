@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3beee8dfc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Game Mania</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!--BARRA SUPERIOR-->
+      <div class="container-fluid max-width">
+        <div class="navbar-nav" id="navbar-top">
+          <a href="" class="nav-item nav-link" id="favoritos-menu"
+            ><i class="fa-solid fa-heart"></i> Favoritos</a
+          >
+          <a href="" class="nav-item nav-link" id="carrinho-menu"
+            ><i class="fa-solid fa-cart-flatbed"></i> Carrinho</a
+          >
+          <a href="" class="nav-item nav-link" id="acompanhar-menu"
+            ><i class="fa-solid fa-crosshairs"></i> Acompanhar Pedido</a
+          >
+          <a href="" class="nav-item nav-link" id="entrar-menu"
+            ><i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar</a
+          >
+        </div>
+      </div>
+      <!--HEADER CENTRAL-->
+      <!--LOGO-->
+      <div id="mid-header" class="container-fluid">
+        <div id="logo" class="container">
+          <img id="img-logo-header" src="./img/logo.png" width="192px" alt="" />
+        </div>
+        <!--MASCOTE-->
+        <div id="center-header" class="container">
+          <img
+            id="mascote-header"
+            src="./img/mascote1.png"
+            width="164px"
+            alt=""
+          />
+          <nav class="navbar navbar-expand-sm navbar-light bs-gray-900">
+            <!--BARRA "CARDAPIO"-->
+            <div id="navbar-id" class="container">
+              <div class="navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"
+                      ><strong>Home</strong>
+                      <span class="visually-hidden"></span
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobre"><strong>Sobre</strong></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="dropdownId"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      ><strong>Produtos</strong></a
+                    >
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="#">PLAYSTATION</a>
+                      <a class="dropdown-item" href="#">PC GAMER</a>
+                      <a class="dropdown-item" href="#">ACESSÓRIOS</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!--INPUT PESQUISA/CLICAR CADASTRO-->
+        <div class="container">
+          <a id="link-cadastro" href=""><strong>CADASTRE-SE!</strong></a>
+          <div id="search-input" class="input-group">
+            <div class="form-outline">
+              <input
+                placeholder="Pesquise Aqui!"
+                type="search"
+                id="form1"
+                class="form-control"
+              />
+            </div>
+            <button type="button" class="btn btn-secondary btn-size">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--SLIDER-->
+      <div class="container-fluid">
+        <div
+          id="carousel-slider"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!--INDICADORES IMG-->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-slider"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-slider"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-slider"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <!--IMAGENS SLIDER-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/img1-gamemania-slider.png"
+                class="d-block w-100"
+                alt="Jogando VideoGame"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/img2-gamemania-slider.png"
+                class="d-block w-100"
+                alt="Vencendo uma Partida"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/img3-gamemania-slider.png"
+                class="d-block w-100"
+                alt="Jogando PC"
+              />
+            </div>
+          </div>
+          <!--BOTOES SLIDER-->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-slider"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-slider"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--CARDS-->
+      <div id="cards-area">
+        <div class="container mt-5">
+          <!--CARDS PROMO-->
+          <div class="row">
+            <!--CARD MASCOTE 1-->
+            <div class="centralizar-md-sm col-xs-12 col-lg-3 col-md-12">
+              <div class="cardMascote card border-5">
+                <h5>PROMOÇÕES</h5>
+                <img src="./img/mascote2.png" alt="" class="card-img-bottom" />
+              </div>
+            </div>
+            <!--PRIMEIRO CARD 1-->
+            <div class="center-w-alone col-lg-3 col-md-6 col-xs-12">
+              
+              <!--BOTAO PREV 1-->
+              <button id="prev-btn-1" class="btn btn-secondary prev-btn">
+                <
+              </button>
+              <!--BOTAO NEXT 1-XS-->
+              <button
+              id="next-btn-hide-1-xs"
+              class="btn btn-secondary d-block d-sm-none"
+            >
+              >
+              </button>
+              <div class="card first-card">
+                <span class="comprar">
+                  <div class="imgcard">
+                    <img
+                      id="img-card-1-1"
+                      class="card-img-top"
+                      src="./img/img-card-1-1.jpg"
+                      alt="Processador"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">CORE I5 10400</h5>
+                    <p class="card-text">Cache 12mb 2.9GHz LGA 1200</p>
+                    <div class="discountBox">
+                      <p class="card-text discount">-20%</p>
+                      <p class="card-text price">R$899,00</p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <!--SEGUNDO CARD 1-->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-none d-sm-block ">
+              <button
+                id="next-btn-hide-1"
+                class="btn btn-secondary next-btn d-lg-none d-md-block d-xs-none"
+              >
+                >
+              </button>
+              <div class="card middle-card">
+                <span class="comprar">
+                  <div class="imgcard">
+                    <img
+                      id="img-card-1-2"
+                      class="card-img-top"
+                      src="./img/img-card-1-2.jpg"
+                      alt="Processador"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">CPC GAMER ONPRESS</h5>
+                    <p class="card-text">RTX 3070, 16GB RAM, SSD 1TB</p>
+                    <div class="discountBox">
+                      <p class="card-text discount">-15%</p>
+                      <p class="card-text price">R$7.990,00</p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <!--TERCEIRO CARD 1-->
+            <div class="col-lg-3 d-md-none d-sm-none d-lg-block d-none ">
+              <!--BOTAO NEXT 1-->
+              <button id="next-btn-1" class="btn btn-secondary next-btn">
+                >
+              </button>
+              <div class="card last-card">
+                <span class="comprar">
+                  <div class="imgcard">
+                    <img
+                      id="img-card-1-3"
+                      class="card-img-top"
+                      src="./img/img-card-1-3.jpg"
+                      alt="Processador"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">HEADSET GAMER</h5>
+                    <p class="card-text">HyperX Cloud Alpha</p>
+                    <div class="discountBox">
+                      <p class="card-text discount">-15%</p>
+                      <p class="card-text price">R$529,00</p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <!--CARDS DESTAQUE-->
+          <div class="row">
+            <!--CARD MASCOTE 2-->
+            <div class="centralizar-md-sm col-lg-3 col-md-12">
+              <div class="cardMascote card border-0">
+                <h5>DESTAQUE</h5>
+                <img
+                  src="./img/mascote3.png"
+                  alt="Mascote"
+                  class="card-img-bottom"
+                />
+              </div>
+            </div>
+            <!--PRIMEIRO CARD 2-->
+            <div class="center-w-alone col-lg-3 col-xs-12 col-md-6">
+              <!--BOTAO PREV 2-->
+              <button id="prev-btn-2" class="btn btn-secondary prev-btn">
+                <
+              </button>
+              <!--BOTAO PREV 2-XS-->
+              <button
+              id="next-btn-hide-2-xs"
+              class="btn btn-secondary d-block d-sm-none"
+            >
+              >
+            </button>
+              <div class="card first-card">
+                <span class="comprar">
+                  <div class="imgcard">
+                    <img
+                      id="img-card-2-1"
+                      class="card-img-top"
+                      src="./img/img-card-2-1.jpg"
+                      alt="SSD"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">SSD 1TB</h5>
+                    <p class="card-text">WDGREEN 1TB M.2 LEITURA 3200</p>
+                    <div class="discountBox">
+                      <p class="card-text price">R$899,00</p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <!--SEGUNDO CARD 2-->
+            <div class="col-lg-3 col-md-6 col-sm-12 d-none d-sm-block">
+              <button
+                id="next-btn-hide-2"
+                class="btn btn-secondary next-btn d-lg-none d-md-block"
+              >
+                >
+              </button>
+              <div class="card middle-card">
+                <span class="comprar">
+                  <div class="imgcard">
+                    <img
+                      id="img-card-2-2"
+                      class="card-img-top"
+                      src="./img/img-card-2-2.jpg"
+                      alt="PC GAMER"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">PC GAMER ACER</h5>
+                    <p class="card-text">I7 11700 RTX 3080 32GB</p>
+                    <div class="discountBox">
+                      <p class="card-text price">R$11.670,00</p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+            <!--TERCEIRO CARD 2-->
+            <div class="col-lg-3 d-md-none d-sm-none d-lg-block d-none">
+              <!--BOTAO NEXT 2-->
+              <button id="next-btn-1" class="btn btn-secondary next-btn">
+                >
+              </button>
+              <div class="card last-card">
+                <span class="comprar">
+                  <div class="imgcard">
+                    <img
+                      id="img-card-2-3"
+                      class="card-img-top"
+                      src="./img/img-card-2-3.jpg"
+                      alt="PC GAMER"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">PC GAMER SKULL</h5>
+                    <p class="card-text">I5 10400F GTX 1650 16GB</p>
+                    <div class="discountBox">
+                      <p class="card-text price">R$5.529,00</p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--SOBRE-->
+      <section id="section-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 id="sobre">Sobre a Game Mania</h2>
+              <div class="col-lg-9 divisor"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <!--PARAGRAFO-->
+              <p class="p-about me-2 mt-4">
+                A paixão pelo universo gamer e o pensamento visionário dos
+                empreendedores fez com que em 2022 surgisse o site da Game
+                Mania. Com preços imbatíveis e contando com inúmeros produtos em
+                seu catálogo, a Game Mania está sempre à frente e traz em
+                primeira mão os melhores lançamentos do mercado mundial!
+                Entramos no e-commerce para crescer, sempre visando a liderança
+                no segmento Gamer.
+              </p>
+            </div>
+            <!--IMAGENS-->
+            <div id="imagens-about" class="col-lg-8 col-md-6 mt-6">
+              <img
+                class="me-4 ms-5"
+                id="img1-about"
+                src="./img/sony.png"
+                width="200px"
+                alt="Logo Sony"
+              />
+              <img
+                class="me-4 ms-5"
+                id="img4-about"
+                src="./img/Intel_logo_(2006-2020).svg.png"
+                width="128px"
+                alt="Logo Intel"
+                class="me-5"
+              />
+            </div>
+          </div>
+        </div>
+    </section>
+    <img
+      src="./img/img-about-2000.png"
+      class="img-fluid"
+      alt="gamer"
+    />
+    </main>
+    <footer id="footer-section">
+      <div class="container-fluid">
+        <div class="col-lg-9 divisor"></div>
+        <div class="row">
+          <div class="col-md-4">
+            <div id="footer-about">
+              <img
+                id="logo-footer"
+                src="./img/logo.png"
+                width="128px"
+                alt="Logo Game Mania"
+              />
+              <p class="p-footer-about">Game Mania</p>
+              <p class="p-footer-about">CNPJ: 00.000.000/0001-00</p>
+              <p class="p-footer-about">Rod. Ademar Gonzaga, 2765</p>
+              <p class="p-footer-about-last">Florianópolis/SC</p>
+            </div>
+            <div class="col-md-3 divisor mb-3"></div>
+          </div>
+          <div id="footer-institucional" class="col-md-4 mt-4 mb-3">
+            <h2>INSTITUCIONAL</h2>
+            <div class="col-md-1 divisor mb-4"></div>
+            <a class="text-decoration-none text-reset" href=""
+              >ASSISTÊNCIA TÉCNICA</a
+            >
+            <a class="text-decoration-none text-reset" href="">QUEM SOMOS</a>
+            <a class="text-decoration-none text-reset" href=""
+              >POLÍTICA DE PRIVACIDADE</a
+            >
+            <a class="text-decoration-none text-reset" href=""
+              >POLÍTICA DE TROCAS E DEVOLUÇÕES</a
+            >
+            <div class="divisor col-md-4 mt-3"></div>
+          </div>
+          <div id="footer-contato" class="col-md-4 mt-4 mb-3">
+            <h2>ENTRE EM CONTATO</h2>
+            <div class="col-lg-1 divisor mb-4"></div>
+            <p><i class="fa fa-envelope"></i> EMAIL@EMAIL.COM</p>
+            <p><i class="fa fa-whatsapp"></i> (55)5555-5555</p>
+            <p><i class="fas fa-clock"></i> SEG-SAB: 09H - 19H</p>
+            <div id="redes-sociais">
+              <a class="text-decoration-none text-reset rede-social" href=""
+                ><i class="fa fa-instagram"></i> INSTAGRAM</a
+              >
+              <a href="" class="text-decoration-none text-reset rede-social"
+                ><i class="fa fa-facebook"></i> FACEBOOK</a
+              >
+            </div>
+            <div class="divisor col-md-3 mt-3 mb-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="divisor desenv pb-4">
+        <p class="text-center">
+          Em desenvolvimento por
+          <a
+            class="text-reset text-decoration-none"
+            href="https://www.linkedin.com/in/eduardo-giacometti-de-patta/"
+            >Eduardo De Patta</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
