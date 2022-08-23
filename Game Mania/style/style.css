@@ -480,3 +480,20 @@ footer{
         padding: 5px 5px;
     }    
 }
+
+/*PAGINA DE LOGIN*/
+.login-body{
+    display: flex;
+    justify-content: center;
+    background: rgba(16,13,54,1);
+}
+
+#login-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    padding: 80px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 20px;
+}
