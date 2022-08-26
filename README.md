@@ -3,4 +3,4 @@
 Criação de um Website de e-commerce fictício
 
 
-Por enquanto, apenas com Bootstrap. Nas próximas atividades, adicionarei mais funcionalidades. Ainda preciso arrumar a responsividade.
+Por enquanto, apenas com Bootstrap e poucas funcionalidades javascript. Nas próximas atividades, aprimorarei a responsividade e adicionarei mais funcionalidades.
