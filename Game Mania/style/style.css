@@ -536,3 +536,11 @@ footer {
   background-color: rgb(184, 184, 184);
   border-radius: 20px;
 }
+
+#emailHelp{
+  height: 15px;
+}
+
+#passwordHelp{  
+  height: 15px;
+}
